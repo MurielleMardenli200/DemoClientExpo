@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "entryPoint": "./index.jsx",
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-PLACEHOLDER.us.auth0.com"
+        }
+      ],
+      "expo-localization",
+      "expo-font",
+      "expo-asset"
+    ],
+    "name": "FLOW",
+    "slug": "flow_rn",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.PLACEHOLDER",
+      "config": {
+        "googleMaps": {
+          "apiKey": "PLACEHOLDER"
+        }
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "versionCode": 2
+    },
+    "ios": {
+      "bundleIdentifier": "com.flow",
+      "newArchEnabled": true,
+      "supportsTablet": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "PLACEHOLDER"
+      }
+    }
+  }
+}
