@@ -3,7 +3,6 @@ import { Text, Button } from 'react-native-paper';
 import { Alert, View, Image } from 'react-native';
 import { useAuth0, Auth0Provider } from 'react-native-auth0';
 import { router } from 'expo-router';
-import config from '../authconfiguration';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { BASE_URL } from './controllers/ServerEndpointController';
@@ -163,10 +162,10 @@ const Authentication = () => {
   );
 };
 
-export default App = () => {
+export default Main = () => {
   return (
-    <Auth0Provider domain={config.domain} clientId={config.clientId}>
+    < >
       <Authentication />
-    </Auth0Provider>
+    </>
   );
 };
